@@ -15,3 +15,9 @@ app.get('/api/v1/songs', (req, res) => {
     .then(songs => res.status(200).json(songs))
     .catch(error => res.status(500).json({ error }))
 })
+
+app.get('/api/v1/covers', (req, res) => {
+  database('covers').select()
+    .then(covers => res.status(200).json(covers))
+    .catch(error => res.status(500).json({ error }))
+})
