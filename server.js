@@ -24,29 +24,42 @@ app.get('/api/v1/covers', (req, res) => {
 
 app.get('/api/v1/songs/:id', (req, res) => {
   const { id } = req.params;
+
   database('songs').where('id', id).select()
-    .then(song => res.status(200).json(song[0]))
+    .then(song => {
+      if (song[0]) res.status(200).json(song[0])
+      else res.status(404).json('Selected song does not exist')
+    })
     .catch(error => res.status(500).json({ error }))
 })
 
 app.get('/api/v1/covers/:id', (req, res) => {
   const { id } = req.params;
   database('covers').where('id', id).select()
-    .then(cover => res.status(200).json(cover[0]))
+    .then(cover => {
+      if (cover[0]) res.status(200).json(cover[0])
+      else res.status(404).json('Selected cover does not exist')
+    })
     .catch(error => res.status(500).json({ error }))
 })
 
 app.post('/api/v1/songs', (req, res) => {
   const { song, original_artist, release_year } = req.body;
   database('songs').insert({ song, original_artist, release_year }, 'id')
-    .then(song => res.status(201).json({ id: song[0] }))
+    .then(song => {
+      if (song[0]) res.status(200).json(song[0])
+      else res.status(404).json('Selected song does not exist')
+    })
     .catch(error => res.status(500).json({ error }))
 })
 
 app.post('/api/v1/covers', (req, res) => {
   const { song_id, cover_artist, release_year } = req.body;
   database('covers').insert({ song_id, cover_artist, release_year }, 'id')
-    .then(cover => res.status(201).json({ id: cover[0] }))
+    .then(cover => {
+      if (cover[0]) res.status(200).json(cover[0])
+      else res.status(404).json('Selected cover does not exist')
+    })
     .catch(error => res.status(500).json({ error }))
 })
 
