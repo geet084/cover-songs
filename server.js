@@ -49,3 +49,10 @@ app.post('/api/v1/covers', (req, res) => {
     .then(cover => res.status(201).json({ id: cover[0] }))
     .catch(error => res.status(500).json({ error }))
 })
+
+app.delete('/api/v1/:db/:id', (req, res) => {
+  const { db, id } = req.params;
+  database(`${db}`).where('id', id).select().del()
+    .then(id => res.status(203).json(`Song ${req.params.id} removed`))
+    .catch(error => res.status(500).json({ error }))
+})
