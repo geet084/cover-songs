@@ -42,3 +42,10 @@ app.post('/api/v1/songs', (req, res) => {
     .then(song => res.status(201).json({ id: song[0] }))
     .catch(error => res.status(500).json({ error }))
 })
+
+app.post('/api/v1/covers', (req, res) => {
+  const { song_id, cover_artist, release_year } = req.body;
+  database('covers').insert({ song_id, cover_artist, release_year }, 'id')
+    .then(cover => res.status(201).json({ id: cover[0] }))
+    .catch(error => res.status(500).json({ error }))
+})
