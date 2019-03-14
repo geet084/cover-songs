@@ -21,3 +21,10 @@ app.get('/api/v1/covers', (req, res) => {
     .then(covers => res.status(200).json(covers))
     .catch(error => res.status(500).json({ error }))
 })
+
+app.get('/api/v1/songs/:id', (req, res) => {
+  const { id } = req.params;
+  database('songs').where('id', id).select()
+    .then(song => res.status(200).json(song[0]))
+    .catch(error => res.status(500).json({ error }))
+})
