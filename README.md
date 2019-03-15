@@ -6,25 +6,39 @@
 
 #### Get all songs:
 ```GET /api/v1/songs```
+
+[Sample Response](https://github.com/geet084/cover-songs#sample-responses)
 #### Get one specific song:
 ```GET /api/v1/songs/:id```
+
+[Sample Response](https://github.com/geet084/cover-songs#endpoint--get-apiv1songsid)
 #### Add new song(s):
 ```POST /api/v1/songs```
 
+[Sample Response](https://github.com/geet084/cover-songs#endpoint--post-apiv1songs)
 ### Covers
 #### Get all songs:
 ```GET /api/v1/covers```
+
+[Sample Response](https://github.com/geet084/cover-songs#endpoint--get-apiv1covers)
 #### Get one specific cover:
 ```GET /api/v1/covers/:id```
+
+[Sample Response](https://github.com/geet084/cover-songs#endpoint--get-apiv1coversid)
 #### Add new cover(s):
 ```POST /api/v1/covers```
 
+[Sample Response]()
 ### Shared
 #### Remove a specific song/cover:
 ```DELETE /api/v1/:db/:id```
 
+[Sample Response](https://github.com/geet084/cover-songs#endpoint--post-apiv1covers)
 ## Sample Responses
-### Endpoint:  ```GET /api/v1/songs```
+### Endpoint:
+```GET /api/v1/songs```
+
+[Sample Response](https://github.com/geet084/cover-songs#endpoint--delete-apiv1dbid)
 #### Parameters: none
 #### Response:
 ```
@@ -48,7 +62,8 @@
     ...
 ]
 ```
-### Endpoint:  ```GET /api/v1/songs/:id```
+### Endpoint:
+```GET /api/v1/songs/:id```
 #### Parameters: none
 #### Response:
 ```
@@ -62,7 +77,8 @@
 }
 ```
 
-### Endpoint:  ```POST /api/v1/songs```
+### Endpoint:
+```POST /api/v1/songs```
 #### Parameters:
 ```
 {
@@ -80,7 +96,8 @@
     "release_year": "2019"
 }
 ```
- ### Endpoint:  ```GET /api/v1/covers```
+ ### Endpoint:
+ ```GET /api/v1/covers```
 #### Parameters: none
 #### Response:
 ```
@@ -104,7 +121,8 @@
     ...
 ]
 ```
-### Endpoint:  ```GET /api/v1/covers/:id```
+### Endpoint:
+```GET /api/v1/covers/:id```
 #### Parameters: none
 #### Response:
 ```
@@ -117,7 +135,8 @@
     "updated_at": "2019-03-13T16:06:17.797Z"
 }
 ```
-### Endpoint:  ```POST /api/v1/covers```
+### Endpoint:
+```POST /api/v1/covers```
 #### Parameters:
 ```
 {
@@ -135,7 +154,8 @@
     "release_year": "2019"
 }
 ```
-### Endpoint:  ```DELETE /api/v1/:db/:id```
+### Endpoint:
+```DELETE /api/v1/:db/:id```
 #### Parameters: none
 #### Response:
 ```"[Song/Cover] [number] removed"```
