@@ -7,33 +7,33 @@
 #### Get all songs:
 ```GET /api/v1/songs```
 
-[Sample Response](https://github.com/geet084/cover-songs#endpoint--get-apiv1songs)
+[Sample Response](https://github.com/geet084/cover-songs#endpoint)
 #### Get one specific song:
 ```GET /api/v1/songs/:id```
 
-[Sample Response](https://github.com/geet084/cover-songs#endpoint--get-apiv1songsid)
+[Sample Response](https://github.com/geet084/cover-songs#endpoint-1)
 #### Add new song(s):
 ```POST /api/v1/songs```
 
-[Sample Response](https://github.com/geet084/cover-songs#endpoint--post-apiv1songs)
+[Sample Response](https://github.com/geet084/cover-songs#endpoint-2)
 ### Covers
 #### Get all songs:
 ```GET /api/v1/covers```
 
-[Sample Response](https://github.com/geet084/cover-songs#endpoint--get-apiv1covers)
+[Sample Response](https://github.com/geet084/cover-songs#endpoint-3)
 #### Get one specific cover:
 ```GET /api/v1/covers/:id```
 
-[Sample Response](https://github.com/geet084/cover-songs#endpoint--get-apiv1coversid)
+[Sample Response](https://github.com/geet084/cover-songs#endpoint-4)
 #### Add new cover(s):
 ```POST /api/v1/covers```
 
-[Sample Response](https://github.com/geet084/cover-songs#endpoint--post-apiv1covers)
+[Sample Response](https://github.com/geet084/cover-songs#endpoint-5)
 ### Shared
 #### Remove a specific song/cover:
 ```DELETE /api/v1/:db/:id```
 
-[Sample Response](https://github.com/geet084/cover-songs#endpoint--delete-apiv1dbid)
+[Sample Response](https://github.com/geet084/cover-songs#endpoint-6)
 ## Sample Responses
 ### Endpoint:
 ```GET /api/v1/songs```
