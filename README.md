@@ -26,7 +26,6 @@
     DELETE /api/v1/:db/:id
    [Sample Response](https://github.com/geet084/cover-songs#endpoint-6)
 ## Sample Responses
----
 #### Endpoint: ```GET /api/v1/songs```
 #### Parameters: none
 #### Response:
