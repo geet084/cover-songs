@@ -7,7 +7,7 @@
 #### Get all songs:
 ```GET /api/v1/songs```
 
-[Sample Response](https://github.com/geet084/cover-songs#sample-responses)
+[Sample Response](https://github.com/geet084/cover-songs#endpoint--get-apiv1songs)
 #### Get one specific song:
 ```GET /api/v1/songs/:id```
 
@@ -28,17 +28,16 @@
 #### Add new cover(s):
 ```POST /api/v1/covers```
 
-[Sample Response]()
+[Sample Response](https://github.com/geet084/cover-songs#endpoint--post-apiv1covers)
 ### Shared
 #### Remove a specific song/cover:
 ```DELETE /api/v1/:db/:id```
 
-[Sample Response](https://github.com/geet084/cover-songs#endpoint--post-apiv1covers)
+[Sample Response](https://github.com/geet084/cover-songs#endpoint--delete-apiv1dbid)
 ## Sample Responses
 ### Endpoint:
 ```GET /api/v1/songs```
 
-[Sample Response](https://github.com/geet084/cover-songs#endpoint--delete-apiv1dbid)
 #### Parameters: none
 #### Response:
 ```
