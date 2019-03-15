@@ -5,44 +5,26 @@
 ### Songs
 
 #### Get all songs:
-```
-GET /api/v1/songs
-```
+```GET /api/v1/songs```
 #### Get one specific song:
-```
-GET /api/v1/songs/:id
-```
+```GET /api/v1/songs/:id```
 #### Add new song(s):
-```
-POST /api/v1/songs
-```
-
+```POST /api/v1/songs```
 
 ### Covers
 #### Get all songs:
-```
-GET /api/v1/covers
-```
+```GET /api/v1/covers```
 #### Get one specific cover:
-```
-GET /api/v1/covers/:id
-```
+```GET /api/v1/covers/:id```
 #### Add new cover(s):
-```
-POST /api/v1/covers
-```
+```POST /api/v1/covers```
 
 ### Shared
 #### Remove a specific song/cover:
-```
-DELETE /api/v1/:db/:id
-```
+```DELETE /api/v1/:db/:id```
 
 ## Sample Responses
-### Endpoint:
-```
-GET /api/v1/songs
-```
+### Endpoint:  ```GET /api/v1/songs```
 #### Parameters: none
 #### Response:
 ```
@@ -66,10 +48,7 @@ GET /api/v1/songs
     ...
 ]
 ```
-### Endpoint:
-```
-GET /api/v1/songs/:id
-```
+### Endpoint:  ```GET /api/v1/songs/:id```
 #### Parameters: none
 #### Response:
 ```
@@ -83,10 +62,7 @@ GET /api/v1/songs/:id
 }
 ```
 
-### Endpoint:
-```
-POST /api/v1/songs
-```
+### Endpoint:  ```POST /api/v1/songs```
 #### Parameters:
 ```
 {
@@ -104,10 +80,7 @@ POST /api/v1/songs
     "release_year": "2019"
 }
 ```
- ### Endpoint:
-```
-GET /api/v1/covers
-```
+ ### Endpoint:  ```GET /api/v1/covers```
 #### Parameters: none
 #### Response:
 ```
@@ -131,10 +104,7 @@ GET /api/v1/covers
     ...
 ]
 ```
-### Endpoint:
-```
-GET /api/v1/covers/:id
-```
+### Endpoint:  ```GET /api/v1/covers/:id```
 #### Parameters: none
 #### Response:
 ```
@@ -147,10 +117,7 @@ GET /api/v1/covers/:id
     "updated_at": "2019-03-13T16:06:17.797Z"
 }
 ```
-### Endpoint:
-```
-POST /api/v1/covers
-```
+### Endpoint:  ```POST /api/v1/covers```
 #### Parameters:
 ```
 {
@@ -168,12 +135,7 @@ POST /api/v1/covers
     "release_year": "2019"
 }
 ```
-### Endpoint:
-```
-DELETE /api/v1/:db/:id
-```
+### Endpoint:  ```DELETE /api/v1/:db/:id```
 #### Parameters: none
 #### Response:
-```
-"[Song/Cover] [number] removed"
-```
+```"[Song/Cover] [number] removed"```
