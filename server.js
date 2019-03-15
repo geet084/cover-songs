@@ -50,7 +50,7 @@ app.post('/api/v1/songs', (req, res) => {
   for (let reqParam of ['song', 'original_artist', 'release_year']) {
     if (!req.body[reqParam]) {
       return res.status(422).send({
-        error: `Expected format: { song: <String>, original_artist: <String>, release_year: <String> }. You're missing a "${reqParam}" property.`
+        error: `Expected format: { song: <String>, original_artist: <String>, release_year: <Integer> }. You're missing a "${reqParam}" property.`
       });
     }
   }
@@ -69,7 +69,7 @@ app.post('/api/v1/covers', (req, res) => {
   for (let reqParam of ['song_id', 'cover_artist', 'release_year']) {
     if (!req.body[reqParam]) {
       return res.status(422).send({
-        error: `Expected format: { song_id: <String>, cover_artist: <String>, release_year: <String> }. You're missing a "${reqParam}" property.`
+        error: `Expected format: { song_id: <Integer>, cover_artist: <String>, release_year: <Integer> }. You're missing a "${reqParam}" property.`
       });
     }
   }
